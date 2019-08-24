@@ -42,6 +42,7 @@ export class Tab1Page {
          console.log('Error', err);
 
          this.dataLocal.guardarRegistro( 'QRCode', 'http://www.google.com' );
+
      });
 
   }

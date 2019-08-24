@@ -55,6 +55,15 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "SQLitePlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open",
+        "window.open"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -65,6 +74,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-ionic-webview": "4.1.1",
     "cordova-plugin-ionic-keyboard": "2.1.3",
-    "cordova-sqlite-storage": "3.3.0"
+    "cordova-sqlite-storage": "3.3.0",
+    "cordova-plugin-inappbrowser": "3.1.0"
   };
 });
