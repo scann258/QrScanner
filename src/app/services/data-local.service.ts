@@ -46,7 +46,11 @@ export class DataLocalService {
     switch ( registro.type ) {
 
       case 'HTTP':
-          this.iab.create( registro.text, '_system' );
+        this.iab.create( registro.text, '_system' );
+        break;
+
+      case 'GEO':
+        this.navCtrl.navigateForward( `tabs/tab2/mapa/${ registro.text }` );
         break;
     }
   }
